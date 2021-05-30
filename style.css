@@ -1,0 +1,155 @@
+body {
+  font-family: 'Alata', sans-serif;
+  background-image: url(img/weather.jpg);
+  color: #efe;
+  letter-spacing: 1.3px;
+}
+  
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 3em;
+}
+
+.weather__box {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: 87.5px 87.5px 87.5px 87.5px 87.5px 87.5px 20px 87.5px 87.5px; 
+  height: 720px;
+  width: 500px;
+  align-items: center;
+  padding: 2em;
+  margin: 0 auto;
+  border: 2px solid ;
+  border-radius: 25px;  
+  background: rgba(0, 0, 0, .8);;
+}
+
+.weather__box .nameapp {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: start;
+  font-size: 0.83rem;
+}
+
+.weather__box .photo {
+  grid-column: 2/5;
+  grid-row: 2/4;
+  align-self: end;
+  justify-self: center;
+  width: 200px;
+  height: 260px;
+}
+
+.weather__box .city-name {
+  grid-column: 2/5;
+  grid-row: 5/6;
+  justify-self: center;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.weather__box .weather_head {
+  grid-column: 1/3;
+  grid-row: 8/9;
+  align-self: end;
+  margin-left: 1.2em;
+}
+
+.weather__box .humidity_head {
+  grid-column: 1/3;
+  grid-row: 9/10;
+  align-self: start;
+  margin-left: 1.2em;
+}
+
+.weather__box .weather {
+  grid-column: 4/6;
+  grid-row: 8/9;
+  align-self: end;
+  justify-self: center;}
+
+.weather__box .humidity {
+  grid-column: 4/6;
+  grid-row: 9/10;
+  align-self: start;
+  justify-self: center;
+}
+
+.weather__box .temp {
+  grid-column: 2/5;
+  grid-row: 4/5;
+  justify-self: center;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.weather__box input {
+  grid-column: 1/5;
+  grid-row: 6/7;
+  align-self: end;
+}
+
+.weather__box button {
+  grid-column: 5/6;
+  grid-row: 6/7;
+  align-self: end;
+}
+
+.weather__box .warning {
+  grid-column: 1/5;
+  grid-row: 7/8;
+  font-size: 0.8rem;
+  align-self: start;
+}
+  
+p {
+  font-size: 1.5rem;
+  color: #efe;
+}
+
+.input-container {
+  box-sizing: border-box;
+  height: 70%;
+}
+
+input[type=text] {
+  padding: 1.1rem 2rem;
+  font-family: 'Alata', sans-serif;
+  font-size: 1rem;
+  margin: 0px; 
+  outline: none;
+  border: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;  
+}
+
+button {
+  margin: 0 auto;
+  padding: 1.1rem 1.6rem;
+  font-family: 'Alata', sans-serif; 
+  border: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #F3A39C;
+  color: #FFF;
+  text-transform: uppercase;
+  -webkit-transition: background-color .25s ease-in-out;
+  -moz-transition: background-color .25s ease-in-out;
+  -o-transition: background-color .25s ease-in-out;
+  transition: background-color .25s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #F6C7C7;    
+}
+
+
+input[type=text]::placeholder {
+  font-family: 'Alata', sans-serif;
+  font-size: 1rem;
+}
+

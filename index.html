@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Opis zawartości strony">
+	<title>Strona główna</title>
+
+	<script src="https://kit.fontawesome.com/71d85429bf.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="weather__box">
+        <p class="nameapp">WeatherApp by k.gaczorek</p>
+        <img src="img/sun.svg" alt="Obrazek przedstawiający pogodę" class="photo">
+        <p class="city-name"></p>
+        <input type="text" placeholder="Wpisz nazwę miasta.." class="input-container"><button class="input-container">Pokaż</button>
+        <p class="warning"></p>
+        <p class="weather_head">Stan:</p>
+        <p class="humidity_head">Wilgotność:</p>
+        <p class="weather"></p>
+        <p class="temp"></p>
+        <p class="humidity"></p>
+        </div>
+    </div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
